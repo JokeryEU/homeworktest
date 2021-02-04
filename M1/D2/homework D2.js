@@ -22,45 +22,45 @@ Create an object containing your name, surname, email address and age.
 
 /* WRITE YOUR CODE HERE */
 
-// let person1 = {
-//     name: "Mihai",
-//     surname: "Ivanov",
-//     emailAddress: "email@yahoo.com",
-//     age: 32
-// };
+let person1 = {
+    name: "Mihai",
+    surname: "Ivanov",
+    emailAddress: "email@yahoo.com",
+    age: 32
+};
 
-// /* EXERCISE 3
-// Add to the previously created object a boolean value to represent wheter you have or not a driving license.
-// */
+/* EXERCISE 3
+Add to the previously created object a boolean value to represent wheter you have or not a driving license.
+*/
 
-// /* WRITE YOUR CODE HERE */
+/* WRITE YOUR CODE HERE */
 
-// person1.drivingLicense = true;
-// console.log(person1);
+person1.drivingLicense = true;
+console.log(person1);
 
-// /* EXERCISE 4
-// Remove from the previously created object the age property.
-// */
+/* EXERCISE 4
+Remove from the previously created object the age property.
+*/
 
-// /* WRITE YOUR CODE HERE */
+/* WRITE YOUR CODE HERE */
 
-// delete person1.age
-// console.log(person1);
+delete person1.age
+console.log(person1);
 
-// /* EXERCISE 5
-// Create a second object with name, surname, email address and verify that this object has a different email address than the previous one.
-// */
+/* EXERCISE 5
+Create a second object with name, surname, email address and verify that this object has a different email address than the previous one.
+*/
 
-// /* WRITE YOUR CODE HERE */
+/* WRITE YOUR CODE HERE */
 
-// let person2 = {
-//     name: "Soare",
-//     surname: "Viorel",
-//     emailAddress: "SoareV@yahoo.com"
-// };
-// if (person2.emailAddress !== person1.emailAddress) {
-//     console.log("Emails are different");
-// } else console.log("Emails are the same");
+let person2 = {
+    name: "Soare",
+    surname: "Viorel",
+    emailAddress: "SoareV@yahoo.com"
+};
+if (person2.emailAddress !== person1.emailAddress) {
+    console.log("Emails are different");
+} else console.log("Emails are the same");
 
 
 /* EXERCISE 6
@@ -88,16 +88,16 @@ Modify the previous answer inserting this information and, applying the same rul
 
 /* WRITE YOUR CODE HERE */
 
-// let totalShoppingCart = 20;
-// let discount = 20 / 100;
-// totalShoppingCart = totalShoppingCart - (totalShoppingCart * discount);
-// if (totalShoppingCart > 50) {
-//     console.log("Free shipping");
-// } else { console.log("Shipping cost: " + "+" + 10);
-// totalShoppingCart = totalShoppingCart + 10;
-// console.log("Total:", totalShoppingCart);
-// };
-// console.log(totalShoppingCart);
+let totalShoppingCart = 20;
+let discount = 20 / 100;
+totalShoppingCart = totalShoppingCart - (totalShoppingCart * discount);
+if (totalShoppingCart > 50) {
+    console.log("Free shipping");
+} else { console.log("Shipping cost: " + "+" + 10);
+totalShoppingCart = totalShoppingCart + 10;
+console.log("Total:", totalShoppingCart);
+};
+console.log(totalShoppingCart);
 
 /* EXERCISE 8
 Create an object rapresenting a car with properties like brand, model, licensePlate.
