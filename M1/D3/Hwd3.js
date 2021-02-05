@@ -27,9 +27,9 @@ Write a function "crazyDiff" that computes the absolute difference between a giv
 It should return triple their absolute difference if the given number is greater than 19.
 */
 
-const crazyDiff = x => x <= 19 ? 19 - x : (x - 19) * 3;
+const crazyDiff = x => x <= 19 ? Math.abs(19 - x) : Math.abs(x - 19) * 3;
 
-console.log(crazyDiff(12));
+console.log(crazyDiff(22));
 
 /* EXERCISE 4
 Write a function "boundary" which accept an integer n and returns true if n is within 20 and 100 (included) or if it's equal to 400.
@@ -49,7 +49,10 @@ It should add the word "Strive" in front of the given string, but if the given s
 
 /* WRITE YOUR CODE HERE */
 
+const strivify = x => x.startsWith("Strive", 0) ? x : `Strive ${x}`;
 
+console.log(strivify("i am a string"));
+console.log(strivify("Strive to be better"));
 
 /* EXERCISE 6
 Write a function "check3and7" which accepts a positive number and check if it is a multiple of 3 or a multiple of 7.
@@ -83,8 +86,8 @@ Write a function "upperFirst" to capitalize the first letter of each word of a g
 /* WRITE YOUR CODE HERE */
 
 const upperFirst = function (x) {
-    var splitLetters = x.toLowerCase().split(' ');
-    for (var i = 0; i < splitLetters.length; i++) {
+    let splitLetters = x.toLowerCase().split(' ');
+    for (let i = 0; i < splitLetters.length; i++) {
         splitLetters[i] = splitLetters[i].charAt(0).toUpperCase() + splitLetters[i].substring(1);     
     }
     
@@ -108,6 +111,15 @@ Write a function "giveMeRandom" which accepts a number n and returns an array co
 */
 
 /* WRITE YOUR CODE HERE */
+
+const giveMeRandom = function(n) {
+    let random = [];
+    for(i = 0; i < n; i++) {
+        random.push(Math.floor(Math.random() * 10)); 
+    }
+    return random;
+}
+console.log(giveMeRandom(6));
 
 /* WHEN YOU ARE FINISHED
 Commit and push the code to your personal GitHub repository and share the link to your commit in Eduflow.
